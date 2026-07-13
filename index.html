@@ -1,1 +1,35 @@
--5ed0cf70-1cbe-42b4-af43-0b85d0f9bea6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="passwordSection" class="card">
+        <h2>🔒 Private Access</h2>
+        <p>Enter the secret code to reveal the surprise!</p>
+        <input type="password" id="passInput" placeholder="Secret Code">
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="errorMsg" style="color:red;"></p>
+    </div>
+
+    <div id="mainContent" class="hidden">
+        <div class="card">
+            <h1>🎉 Happy Birthday!</h1>
+            <p>18 June ✨</p>
+            <div class="slider">
+                <img id="slide" src="Photo1.jpg" alt="Birthday Photo">
+            </div>
+            <button onclick="startBirthday()">Open Surprise</button>
+            <div id="messageBox" class="hidden">
+                <h3>💖 A Message For You 💖</h3>
+                <p id="typing"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
